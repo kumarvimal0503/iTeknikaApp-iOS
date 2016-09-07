@@ -105,7 +105,7 @@
                                     <constraint firstAttribute="width" secondItem="ehR-DH-CQV" secondAttribute="height" multiplier="326:29" id="O9J-o0-kgI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="17"/>
-                                <state key="normal" title="Create new account">
+                                <state key="normal" title="Link for Sign Up">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
