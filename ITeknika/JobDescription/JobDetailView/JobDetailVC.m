@@ -21,7 +21,7 @@
 //Setting look and feel of the screen.
 -(void)setViewLookAndFeel
 {
-     self.navigationController.title=@"Job Detail";
+     self.navigationItem.title=@"Job Detail";
 }
 
 - (void)didReceiveMemoryWarning {
