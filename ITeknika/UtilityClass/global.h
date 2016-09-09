@@ -9,15 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "Reachability.h"
+#import <QuartzCore/QuartzCore.h>
+#import <AVFoundation/AVFoundation.h>
 
 #define ec2maschineIP @"http://54.148.82.251/"
 #define SSOUSING @"SSOUsing"
 #define USERNAME @"username"
 #define PASSWORD @"password"
 #define LOGGEDIN @"LoggedIn"
-
 #define iTeknika @"iTeknika"
-
 #define PLEASEWAIT @"Please wait"
 #define ERROR_MSG @"error_message"
 #define SUCCESS @"success"
@@ -33,7 +33,7 @@
 //#define APPTHEMECOLOR [UIColor colorWithRed:1 green:0 blue:0.294 alpha:1]
 //Red orange Color
 //#define APPTHEMECOLOR [UIColor colorWithRed:0.78 green:0.22 blue:0.06 alpha:1.0]
-//Blue color
+//Blue color (#14A1D9)
 #define APPTHEMECOLOR [UIColor colorWithRed:0.08 green:0.63 blue:0.85 alpha:1.0]
 //Dark blue green
 //#define APPTHEMECOLOR [UIColor colorWithRed:0.00 green:0.51 blue:0.56 alpha:1.0]
@@ -63,11 +63,13 @@
 #define USER_CHANGE_PASSOWRD @"change_password"
 #define USER_SMSALERT @"sms_alert"
 #define USER_EMAILALERT @"email_alert"
-
+#define Camera              @"Camera"
+#define Gallery             @"Gallery"
 
 #define WhatsAppInvitation  @"whatsapp://send?text=Download%20this%20app%20to%20view%20your%20job%20history%20and%20register%20for%20job."
 #define ErrorTitle          @"Error"
 #define KChatVCOk           @"OK"
+#define CameraAlert         @"Please turn on Camera Services in your device settings."
 #define ErrorAlertWhatsApp  @"Your device doesn't support Whatsapp!"
 #define EmailErrorAlert     @"Your device doesn't support Mail!"
 #define ErrorAlertSms       @"Your device doesn't support SMS!"
@@ -89,6 +91,9 @@ extern bool isAllreadyTried;
 extern bool tablePopup;
 
 @interface global : NSObject
+
+//camera Permission
++(BOOL)CameraPermission;
 //Post Request Method
 +(NSData*)makePostRequest:(NSData*)body requestURL:(NSString*)url;
 //Show alert Method
@@ -101,4 +106,6 @@ extern bool tablePopup;
 +(void)setTextFieldInsets:(UITextField*)textfield;
 //Setting button border 
 +(void)setButtonBorder:(UIButton *)button;
+//Image resize method to compress
++(UIImage *) resizedImage:(UIImage *)inImage :(CGRect) thumbRect;
 @end

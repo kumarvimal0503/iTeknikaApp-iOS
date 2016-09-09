@@ -16,7 +16,7 @@
 
 @interface EditProfileViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 {
-    
+    BOOL camera;
 }
 @end
 
@@ -87,34 +87,109 @@ CGFloat animatedDistance4;
     [self setTextFieldInsets:self.emailTextfield];
     
 }
-//profile method to pick the picture from device
--(void) getProPic{
+
+
+//Change Picture Action Button.
+- (IBAction)changePictureAction:(id)sender {
+
+        UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+        
+        [actionSheet addAction:[UIAlertAction actionWithTitle:KCancel style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+            
+            // Cancel button tappped.
+            [actionSheet dismissViewControllerAnimated:YES completion:nil];
+            
+        }]];
+        
+        [actionSheet addAction:[UIAlertAction actionWithTitle:Gallery style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            
+            // Distructive button tapped.
+            [self getMediaPic];
+        }]];
+        
+        [actionSheet addAction:[UIAlertAction actionWithTitle:Camera style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            
+            // OK button tapped.
+            [self getCameraPic];
+        }]];
+        
+        // Present action sheet.
+        [self presentViewController:actionSheet animated:YES completion:nil];
+
+}
+
+-(void)getCameraPic{
+    BOOL permission=[global CameraPermission];
+    
+    
+    if (permission) {
+        camera=true;
+        UIImagePickerController * picker = [[UIImagePickerController alloc] init];
+        picker.delegate = self;
+        picker.allowsEditing = YES;
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        [self presentViewController:picker animated:YES completion:NULL];
+    }
+    else
+    {
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:APP_NAME message:CameraAlert preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Settings" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action)
+                                        {
+                                            [self sendToSettingPage];
+                                            //write command for action perform
+                                        }];
+        
+        UIAlertAction* cancel = [UIAlertAction actionWithTitle:KCancel style:UIAlertActionStyleDefault handler:^(UIAlertAction * action)
+                                 {
+                                     //write command for action perform
+                                 }];
+        
+        [alert addAction:defaultAction];
+        [alert addAction:cancel];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+}
+// call image picker
+-(void) getMediaPic{
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
     picker.allowsEditing = YES;
-    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;;
     
     [self presentViewController:picker animated:YES completion:NULL];
 }
-#pragma imagePickerController delegate method
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+
+-(void)sendToSettingPage
+{
+    BOOL canOpenSettings = (UIApplicationOpenSettingsURLString != NULL);
+    if (canOpenSettings)
+    {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+    }
     
+}
+#pragma mark************************ Image Picker Delegate Method *********************
+// Delegate method of picker view for image selection
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
     UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
-    self.userPlaceholderImage.image = chosenImage;
-    
+    if (camera == true) {
+        //Save the image to lib when click from camera
+        UIImageWriteToSavedPhotosAlbum(chosenImage, nil, nil, nil);
+        camera=false;
+    }
+    //Image with out compression
+    self.userPlaceholderImage.image=chosenImage;
+//    //Image compression
+//    self.userPlaceholderImage.image=[global resizedImage:chosenImage :CGRectMake(0, 0, 300, 300)];
     [picker dismissViewControllerAnimated:YES completion:NULL];
-    
 }
-#pragma imagePickerControllerDidCancel delegate method
+//Delegate method of picker view for image cancellation
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    
     [picker dismissViewControllerAnimated:YES completion:NULL];
-    
 }
-//Change Picture Action Button.
-- (IBAction)changePictureAction:(id)sender {
-    [self getProPic];
-}
+
 // Navigation bar save button
 -(void)Save{
     CATransition* transition = [CATransition animation];

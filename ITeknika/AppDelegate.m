@@ -29,10 +29,48 @@
     
     [[UINavigationBar appearance] setTitleTextAttributes:attributes];
     
-    
+    NSString *colorHexCode=[self hexStringFromColor:[UIColor colorWithRed:0.08 green:0.63 blue:0.85 alpha:1.0]];
+    DMLog(@"Print color %@",colorHexCode);
      //[self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
+}
+//Convert the color to hexa code
+- (NSString *)hexStringFromColor:(UIColor *)color {
+    const CGFloat *components = CGColorGetComponents(color.CGColor);
+    
+    CGFloat r = components[0];
+    CGFloat g = components[1];
+    CGFloat b = components[2];
+    
+    return [NSString stringWithFormat:@"#%02lX%02lX%02lX",
+            lroundf(r * 255),
+            lroundf(g * 255),
+            lroundf(b * 255)];
+}
+
+- (UIColor *) colorWithHexString: (NSString *) hexString
+{
+    NSString *colorString = [[hexString stringByReplacingOccurrencesOfString: @"#" withString: @""] uppercaseString];
+    
+    NSLog(@"colorString :%@",colorString);
+    CGFloat alpha, red, blue, green;
+    
+    // #RGB
+    alpha = 1.0f;
+    red   = [self colorComponentFrom: colorString start: 0 length: 2];
+    green = [self colorComponentFrom: colorString start: 2 length: 2];
+    blue  = [self colorComponentFrom: colorString start: 4 length: 2];
+    
+    return [UIColor colorWithRed: red green: green blue: blue alpha: alpha];
+}
+
+- (CGFloat) colorComponentFrom: (NSString *) string start: (NSUInteger) start length: (NSUInteger) length {
+    NSString *substring = [string substringWithRange: NSMakeRange(start, length)];
+    NSString *fullHex = length == 2 ? substring : [NSString stringWithFormat: @"%@%@", substring, substring];
+    unsigned hexComponent;
+    [[NSScanner scannerWithString: fullHex] scanHexInt: &hexComponent];
+    return hexComponent / 255.0;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

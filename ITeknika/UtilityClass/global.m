@@ -10,6 +10,7 @@
 #import "Reachability.h"
 #import <UIKit/UIKit.h>
 
+
 NSString *ssousing;
 NSString *USERID;
 
@@ -74,6 +75,74 @@ bool tablePopup=NO;
     
     button.layer.borderColor=[[UIColor whiteColor]CGColor];
     button.layer.borderWidth= 0.3f;
+}
+//Permission Asking for Camera
++(BOOL)CameraPermission
+{
+    __block BOOL returnType=NO;
+    AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+    if(authStatus == AVAuthorizationStatusAuthorized) {
+        return true;
+    } else if(authStatus == AVAuthorizationStatusDenied){
+        return false;
+        // denied
+    } else if(authStatus == AVAuthorizationStatusRestricted){
+        return false;
+        // restricted, normally won't happen
+    } else if(authStatus == AVAuthorizationStatusNotDetermined){
+        // not determined?!
+        [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
+            if(granted){
+                returnType= true;
+            } else {
+                returnType= false;
+                
+            }
+        }];
+        return returnType;
+    }
+    else {
+        return false;
+        // impossible, unknown authorization status
+    }
+}
+
++(UIImage *) resizedImage:(UIImage *)inImage :(CGRect) thumbRect
+{
+    CGImageRef          imageRef = [inImage CGImage];
+    CGImageAlphaInfo    alphaInfo = CGImageGetAlphaInfo(imageRef);
+    
+    // There's a wierdness with kCGImageAlphaNone and CGBitmapContextCreate
+    // see Supported Pixel Formats in the Quartz 2D Programming Guide
+    // Creating a Bitmap Graphics Context section
+    // only RGB 8 bit images with alpha of kCGImageAlphaNoneSkipFirst, kCGImageAlphaNoneSkipLast, kCGImageAlphaPremultipliedFirst,
+    // and kCGImageAlphaPremultipliedLast, with a few other oddball image kinds are supported
+    // The images on input here are likely to be png or jpeg files
+    if (alphaInfo == kCGImageAlphaNone)
+        alphaInfo = kCGImageAlphaNoneSkipLast;
+    
+    // Build a bitmap context that's the size of the thumbRect
+    CGContextRef bitmap = CGBitmapContextCreate(
+                                                NULL,
+                                                thumbRect.size.width,       // width
+                                                thumbRect.size.height,      // height
+                                                CGImageGetBitsPerComponent(imageRef),   // really needs to always be 8
+                                                4 * thumbRect.size.width,   // rowbytes
+                                                CGImageGetColorSpace(imageRef),
+                                                alphaInfo
+                                                );
+    
+    // Draw into the context, this scales the image
+    CGContextDrawImage(bitmap, thumbRect, imageRef);
+    
+    // Get an image from the context and a UIImage
+    CGImageRef  ref = CGBitmapContextCreateImage(bitmap);
+    UIImage*    result = [UIImage imageWithCGImage:ref];
+    
+    CGContextRelease(bitmap);   // ok if NULL
+    CGImageRelease(ref);
+    
+    return result;
 }
 
 @end
