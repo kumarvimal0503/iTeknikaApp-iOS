@@ -34,13 +34,13 @@
 // view did load method
 - (void)viewDidLoad {
     
-    sharingMsg=@"Now get incredible Real-time deals with the #DealMonkApp. Take it for a spin!";
+    sharingMsg=IviteMessage;
    // sharingURL=@"www.deal-monk.com";
     
     self.automaticallyAdjustsScrollViewInsets=NO;
-    _options = [NSArray arrayWithObjects:@"Refer By SMS",@"Refer By Email", @"Twitter",nil];
+    _options = [NSArray arrayWithObjects:@"Refer By SMS",@"Refer By Email", @"Twitter",@"WhatsApp",nil];
     
-    _icons= [NSArray arrayWithObjects:@"sms-g",@"email-g",@"twitter-g",nil];
+    _icons= [NSArray arrayWithObjects:@"sms-g",@"email-g",@"twitter-g",@"WhatsApp-g",nil];
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -138,7 +138,7 @@
     ReferralTableViewCell *cell=(ReferralTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableIdentifier forIndexPath:indexPath];
     
     UIView *v = [[UIView alloc] initWithFrame:CGRectMake(10, 20, self.view.frame.size.width, 20)];
-    v.backgroundColor = [UIColor colorWithRed:1 green:0 blue:0.294 alpha:0.8]; // any color of your choice.
+    v.backgroundColor = APPTHEMECOLOR;  // any color of your choice.
     
     cell.selectedBackgroundView = v;
     if (cell == nil) {
@@ -168,56 +168,88 @@
             break;
         //Twitter Method Call
         case 2:
-            
             [self shareTwitter];
             break;
+        case 3:
+            [self whatsAppCallMethod];
+            break;
+
         default:
             break;
     }
-}  
-//Show SMS method
+}
+
+-(void)whatsAppCallMethod
+{
+    NSURL *whatsappURL = [NSURL URLWithString:WhatsAppInvitation];
+    
+    if ([[UIApplication sharedApplication] canOpenURL:whatsappURL]) {
+        [[UIApplication sharedApplication] openURL: whatsappURL];
+    }
+    else {
+        UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:ErrorTitle message:ErrorAlertWhatsApp delegate:nil cancelButtonTitle:KChatVCOk otherButtonTitles:nil];
+        [warningAlert show];
+    }
+}
+//Custom message for SMS
 - (void)showSMS {
     
-    MFMessageComposeViewController *controller = [[MFMessageComposeViewController alloc] init] ;
-    if([MFMessageComposeViewController canSendText])
+    if(![MFMessageComposeViewController canSendText]) {
+        UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:ErrorTitle message:ErrorAlertSms delegate:nil cancelButtonTitle:KChatVCOk otherButtonTitles:nil];
+        [warningAlert show];
+        return;
+    }
+    else
     {
-        controller.body = @"Now get incredible Real-time deals with the DealMonk App. Take it for a spin";
-        controller.recipients = [NSArray arrayWithObjects:@"0000000000", nil];
-        controller.messageComposeDelegate = self;
-        [self presentViewController:controller animated:YES completion:nil];
+    NSString *message = [NSString stringWithFormat:IviteMessage];
+    MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
+    messageController.messageComposeDelegate = self;
+    [messageController setRecipients:[NSArray arrayWithObjects:@"", nil]];
+    [messageController setBody:message];
+    
+    // Present message view controller on screen
+    [self presentViewController:messageController animated:YES completion:nil];
     }
 }
 
 
+#pragma mark************************ Mail Method *********************
+
+//Email Method to call email view controller
+- (void)emailMethod
+{
+    if(![MFMailComposeViewController canSendMail]) {
+        UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:ErrorTitle message:EmailErrorAlert delegate:nil cancelButtonTitle:KChatVCOk otherButtonTitles:nil];
+        [warningAlert show];
+        return;
+    }
+    else
+    {
+        // Email Subject
+        NSString *emailTitle = APP_NAME;
+        // Email Content
+        NSString *messageBody = IviteMessage;
+        // To address
+        //    NSArray *toRecipents = [NSArray arrayWithObject:@""];
+        
+        MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
+        mc.mailComposeDelegate = self;
+        [mc setSubject:emailTitle];
+        [mc setMessageBody:messageBody isHTML:NO];
+        
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"ic_MakeInIndia" ofType:@"png"];
+        NSData *myData = [NSData dataWithContentsOfFile:path];
+        [mc addAttachmentData:myData mimeType:@"image/png" fileName:@"logo.png"];
+        [self presentViewController:mc animated:YES completion:NULL];
+    }
+}
+
 // Delegate method of message composer
-#pragma messageComposeViewController.
+#pragma mark ************* messageComposeViewController*********************
 -(void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result{
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
-//Email Method to call email view controller
--(void)emailMethod
-{
-    
-    if ([MFMailComposeViewController canSendMail])
-    {
-        MFMailComposeViewController *mail = [[MFMailComposeViewController alloc] init];
-        mail.mailComposeDelegate = self;
-        [mail setSubject:@"DealMonk Amazing App"];
-        [mail setMessageBody:sharingMsg isHTML:NO];
-        
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"ic_MakeInIndia" ofType:@"png"];
-        NSData *myData = [NSData dataWithContentsOfFile:path];
-        [mail addAttachmentData:myData mimeType:@"image/png" fileName:@"logo.png"];
-        [self presentViewController:mail animated:YES completion:NULL];
-    }
-    else
-    {
-        NSLog(@"This device cannot send email");
-    }
-}
-//Delegate method of email.
-#pragma mailComposeController delegate method
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
 {
     // Notifies users about errors associated with the interface
@@ -230,7 +262,7 @@
             [SVProgressHUD showWithStatus:@"Saved"];
             break;
         case MFMailComposeResultSent:
-            [global showAllertMsg:@"DealMonk" Message:@"Thank you for sharing!"];
+            [global showAllertMsg:@"iTeknika" Message:@"Thank you for sharing!"];
             break;
         case MFMailComposeResultFailed:
             [SVProgressHUD showErrorWithStatus:@"Failed To send"];
@@ -242,6 +274,7 @@
     
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
+
 
 //Twitter Share method
 -(void)shareTwitter
@@ -283,9 +316,9 @@
         };
         
         //  Set the initial body of the Tweet
-        [tweetSheet setInitialText: @"Now get incredible Real-time deals with the #DealMonkApp. Take it for a spin!"];
+        [tweetSheet setInitialText: IviteMessage];
                 if (!SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
-                    [tweetSheet addURL:[NSURL URLWithString:@"DealMonk"]];
+                    [tweetSheet addURL:[NSURL URLWithString:@"iTeknika"]];
                 }
          [tweetSheet addImage:[UIImage imageNamed:@"twitter_ad.png"]];
         //  Adds an image to the Tweet.  For demo purposes, assume we have an

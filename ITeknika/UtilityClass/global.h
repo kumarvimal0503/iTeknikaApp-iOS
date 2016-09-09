@@ -10,8 +10,6 @@
 #import <UIKit/UIKit.h>
 #import "Reachability.h"
 
-//#define ec2maschineIP @"http://192.168.0.123:9999/"
-//#define ec2maschineIP @"http://192.168.0.122:8005/"
 #define ec2maschineIP @"http://54.148.82.251/"
 #define SSOUSING @"SSOUsing"
 #define USERNAME @"username"
@@ -67,6 +65,13 @@
 #define USER_EMAILALERT @"email_alert"
 
 
+#define WhatsAppInvitation  @"whatsapp://send?text=Download%20this%20app%20to%20view%20your%20job%20history%20and%20register%20for%20job."
+#define ErrorTitle          @"Error"
+#define KChatVCOk           @"OK"
+#define ErrorAlertWhatsApp  @"Your device doesn't support Whatsapp!"
+#define EmailErrorAlert     @"Your device doesn't support Mail!"
+#define ErrorAlertSms       @"Your device doesn't support SMS!"
+#define IviteMessage        @"Check out this app for job registration "
 //*********************Log print in project**********************
 
 #ifdef DEBUG
