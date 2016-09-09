@@ -76,6 +76,7 @@
 		27312CB01D7F2A3800E85020 /* ReferralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27312CAE1D7F2A3800E85020 /* ReferralViewController.m */; };
 		27417D6E1D800C700084D06D /* SignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27417D6D1D800C700084D06D /* SignUpVC.m */; };
 		27417D711D80375C0084D06D /* BackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27417D701D80375C0084D06D /* BackgroundLayer.m */; };
+		2759ECED1D83060E00FB3297 /* JobDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2759ECEC1D83060E00FB3297 /* JobDetailVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -201,6 +202,8 @@
 		27417D6D1D800C700084D06D /* SignUpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpVC.m; sourceTree = "<group>"; };
 		27417D6F1D80375C0084D06D /* BackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundLayer.h; sourceTree = "<group>"; };
 		27417D701D80375C0084D06D /* BackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundLayer.m; sourceTree = "<group>"; };
+		2759ECEB1D83060E00FB3297 /* JobDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailVC.h; sourceTree = "<group>"; };
+		2759ECEC1D83060E00FB3297 /* JobDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDetailVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -486,6 +489,7 @@
 		27312C791D7F03DE00E85020 /* LandingScreen */ = {
 			isa = PBXGroup;
 			children = (
+				2759ECEA1D83060E00FB3297 /* JobDetailView */,
 				27312C7A1D7F03DE00E85020 /* LandingVC.h */,
 				27312C7B1D7F03DE00E85020 /* LandingVC.m */,
 				27312C881D7F128B00E85020 /* LandingTableViewCell.h */,
@@ -588,6 +592,16 @@
 				27417D6D1D800C700084D06D /* SignUpVC.m */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		2759ECEA1D83060E00FB3297 /* JobDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				2759ECEB1D83060E00FB3297 /* JobDetailVC.h */,
+				2759ECEC1D83060E00FB3297 /* JobDetailVC.m */,
+			);
+			name = JobDetailView;
+			path = ../JobDescription/JobDetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -723,6 +737,7 @@
 				27312BEE1D7EED5500E85020 /* Reachability.m in Sources */,
 				27312C4E1D7EF0AE00E85020 /* UIImageView+WebCache.m in Sources */,
 				27312C7D1D7F03DF00E85020 /* LandingVC.m in Sources */,
+				2759ECED1D83060E00FB3297 /* JobDetailVC.m in Sources */,
 				27312C4D1D7EF0AE00E85020 /* UIImageView+HighlightedWebCache.m in Sources */,
 				27312BE21D7EEB6300E85020 /* SWRevealViewController.m in Sources */,
 				27417D6E1D800C700084D06D /* SignUpVC.m in Sources */,

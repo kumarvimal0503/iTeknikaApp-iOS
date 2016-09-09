@@ -12,6 +12,7 @@
             <string>MyriadPro-Bold</string>
             <string>MyriadPro-Bold</string>
             <string>MyriadPro-Bold</string>
+            <string>MyriadPro-Bold</string>
         </mutableArray>
         <mutableArray key="MyriadPro-Light.otf">
             <string>MyriadPro-Light</string>
@@ -1813,11 +1814,54 @@
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="landingTableView" destination="GP3-ND-cEI" id="ckE-m8-3m0"/>
+                        <segue destination="RIg-uy-yDY" kind="show" identifier="jobDescriptionSegue" id="ce1-wC-sNQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hQW-Ix-tu3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1484" y="-850"/>
+        </scene>
+        <!--Job DetailVC-->
+        <scene sceneID="Z3H-wA-2gH">
+            <objects>
+                <viewController id="RIg-uy-yDY" customClass="JobDetailVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yZU-d2-GBf"/>
+                        <viewControllerLayoutGuide type="bottom" id="1mA-ma-OrD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="99U-x0-0v1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gma-iH-9V2">
+                                <rect key="frame" x="-4" y="522" width="328" height="46"/>
+                                <color key="backgroundColor" red="0.78039215689999997" green="0.22352941179999999" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gma-iH-9V2" secondAttribute="height" multiplier="64:9" id="doC-sC-xLb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="20"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerationButtonAction:" destination="RIg-uy-yDY" eventType="touchUpInside" id="p9J-MK-nqv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="gma-iH-9V2" secondAttribute="trailing" constant="-20" id="6bt-0Y-tNC"/>
+                            <constraint firstItem="1mA-ma-OrD" firstAttribute="top" secondItem="gma-iH-9V2" secondAttribute="bottom" id="fLl-c7-Vl3"/>
+                            <constraint firstItem="gma-iH-9V2" firstAttribute="leading" secondItem="99U-x0-0v1" secondAttribute="leadingMargin" constant="-20" id="uMZ-Xe-gpH"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WoH-0B-nL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1048" y="-850"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="iHo-ZK-9f5">
@@ -1886,7 +1930,7 @@
         <image name="userIcon-w" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="o8S-dE-gwg"/>
+        <segue reference="Qd0-qI-1Mf"/>
         <segue reference="A0w-6m-9NY"/>
     </inferredMetricsTieBreakers>
 </document>
