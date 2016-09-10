@@ -54,6 +54,8 @@
             <string>MyriadPro-Regular</string>
             <string>MyriadPro-Regular</string>
             <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -284,7 +286,7 @@
         <!--Registered Detail-->
         <scene sceneID="63a-vr-ON6">
             <objects>
-                <viewController id="YWC-ng-Dkj" customClass="RegisteredJobList" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="YWC-ng-Dkj" customClass="RegisteredJobList" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tKp-57-hTu"/>
                         <viewControllerLayoutGuide type="bottom" id="QKs-Md-dgu"/>
@@ -292,7 +294,51 @@
                     <view key="view" contentMode="scaleToFill" id="UBb-i2-zfJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="dwy-83-bBx">
+                                <rect key="frame" x="-9" y="64" width="336" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="landingCell" rowHeight="72" id="LbB-Li-Sf4" customClass="LandingTableViewCell">
+                                        <rect key="frame" x="0.0" y="1" width="336" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LbB-Li-Sf4" id="xec-Ou-VZE">
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="71"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nm1-fR-CHa">
+                                                    <rect key="frame" x="17" y="15" width="303" height="21"/>
+                                                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eam-ae-iUA">
+                                                    <rect key="frame" x="17" y="44" width="292" height="21"/>
+                                                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="jobDescriptionLabel" destination="eam-ae-iUA" id="N2g-eT-F4k"/>
+                                            <outlet property="jobTitleLabel" destination="Nm1-fR-CHa" id="6pa-dt-nYz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="YWC-ng-Dkj" id="cmG-AU-Rvi"/>
+                                    <outlet property="delegate" destination="YWC-ng-Dkj" id="U4z-af-Rnv"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dwy-83-bBx" firstAttribute="top" secondItem="tKp-57-hTu" secondAttribute="bottom" id="EJn-Bl-eiO"/>
+                            <constraint firstItem="QKs-Md-dgu" firstAttribute="top" secondItem="dwy-83-bBx" secondAttribute="bottom" id="iSD-4S-HSv"/>
+                            <constraint firstItem="dwy-83-bBx" firstAttribute="leading" secondItem="UBb-i2-zfJ" secondAttribute="leadingMargin" constant="-25" id="r9L-H3-IfJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dwy-83-bBx" secondAttribute="trailing" constant="-23" id="yM3-Ib-nvt"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Registered Detail" id="z8j-N3-jzj">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="WmN-Gj-dqA">
@@ -301,6 +347,10 @@
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="registeredJobTable" destination="dwy-83-bBx" id="Qgb-QP-VoC"/>
+                        <segue destination="RIg-uy-yDY" kind="show" identifier="registredJobDescriptionSegue" id="gaG-T5-v4q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tci-JF-Lwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1932,5 +1982,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="Qd0-qI-1Mf"/>
         <segue reference="A0w-6m-9NY"/>
+        <segue reference="gaG-T5-v4q"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#define REGISTREDJOB_SEGUE_IDENTIFIER @"registredJobDescriptionSegue"
 
 @interface RegisteredJobList : UIViewController
+@property (weak, nonatomic) IBOutlet UITableView *registeredJobTable;
 
 @end

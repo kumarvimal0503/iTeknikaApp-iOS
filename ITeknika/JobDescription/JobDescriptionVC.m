@@ -8,6 +8,8 @@
 
 #import "JobDescriptionVC.h"
 #import "SWRevealViewController.h"
+#import "global.h"
+
 @interface JobDescriptionVC ()
 
 @end
@@ -38,7 +40,6 @@
 -(void)setViewLookAndFeel
 {
 }
-
 
 
 - (void)didReceiveMemoryWarning {
