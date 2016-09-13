@@ -14,7 +14,7 @@
 //Constant For Segue
 #define CHANGEPASSWORDSEGUE @"changePasswordSegue"
 #define EDITPROFILESEGUE @"editProfileSegue"
-
+#define PROFILESNAPSHOTSEGUE @"profileSnapShotSegue"
 @interface ProfileViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *userPlaceholderImage;
@@ -24,5 +24,6 @@
 @property (weak, nonatomic) IBOutlet TextFieldValidator *emailTextfield;
 @property (weak, nonatomic) IBOutlet UIButton *changePasswordButton;
 - (IBAction)changePasswordAction:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *profileSnapShotButton;
 
 @end

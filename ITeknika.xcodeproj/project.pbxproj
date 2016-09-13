@@ -76,6 +76,9 @@
 		27312CB01D7F2A3800E85020 /* ReferralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27312CAE1D7F2A3800E85020 /* ReferralViewController.m */; };
 		27417D6E1D800C700084D06D /* SignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27417D6D1D800C700084D06D /* SignUpVC.m */; };
 		27417D711D80375C0084D06D /* BackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27417D701D80375C0084D06D /* BackgroundLayer.m */; };
+		27487A5D1D882C8A009B2C92 /* ProfileSnapShotVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27487A5C1D882C8A009B2C92 /* ProfileSnapShotVC.m */; };
+		27487A611D882CEC009B2C92 /* MyProgressVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27487A601D882CEC009B2C92 /* MyProgressVC.m */; };
+		27487A641D8837DC009B2C92 /* MyProgressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27487A631D8837DC009B2C92 /* MyProgressCell.m */; };
 		2759ECED1D83060E00FB3297 /* JobDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2759ECEC1D83060E00FB3297 /* JobDetailVC.m */; };
 /* End PBXBuildFile section */
 
@@ -202,6 +205,12 @@
 		27417D6D1D800C700084D06D /* SignUpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpVC.m; sourceTree = "<group>"; };
 		27417D6F1D80375C0084D06D /* BackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundLayer.h; sourceTree = "<group>"; };
 		27417D701D80375C0084D06D /* BackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundLayer.m; sourceTree = "<group>"; };
+		27487A5B1D882C8A009B2C92 /* ProfileSnapShotVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileSnapShotVC.h; sourceTree = "<group>"; };
+		27487A5C1D882C8A009B2C92 /* ProfileSnapShotVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileSnapShotVC.m; sourceTree = "<group>"; };
+		27487A5F1D882CEC009B2C92 /* MyProgressVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProgressVC.h; sourceTree = "<group>"; };
+		27487A601D882CEC009B2C92 /* MyProgressVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProgressVC.m; sourceTree = "<group>"; };
+		27487A621D8837DC009B2C92 /* MyProgressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProgressCell.h; sourceTree = "<group>"; };
+		27487A631D8837DC009B2C92 /* MyProgressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProgressCell.m; sourceTree = "<group>"; };
 		2759ECEB1D83060E00FB3297 /* JobDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailVC.h; sourceTree = "<group>"; };
 		2759ECEC1D83060E00FB3297 /* JobDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDetailVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -335,6 +344,7 @@
 				27312C791D7F03DE00E85020 /* LandingScreen */,
 				27312C6E1D7F033500E85020 /* JobDescription */,
 				27312CA61D7F29AB00E85020 /* RegisteredList */,
+				27487A5E1D882CD0009B2C92 /* MyProgress */,
 				27312C551D7EF60900E85020 /* Profile */,
 				27312CAA1D7F2A3800E85020 /* InviteFriends */,
 				27312C8F1D7F282B00E85020 /* Settings */,
@@ -442,6 +452,7 @@
 		27312C551D7EF60900E85020 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				27487A5A1D882C73009B2C92 /* ProfileSnapShot */,
 				27312C561D7EF60900E85020 /* Change Password */,
 				27312C591D7EF60900E85020 /* Edit Profile */,
 				27312C5C1D7EF60900E85020 /* ProfileViewController.h */,
@@ -594,6 +605,26 @@
 			path = SignUp;
 			sourceTree = "<group>";
 		};
+		27487A5A1D882C73009B2C92 /* ProfileSnapShot */ = {
+			isa = PBXGroup;
+			children = (
+				27487A5B1D882C8A009B2C92 /* ProfileSnapShotVC.h */,
+				27487A5C1D882C8A009B2C92 /* ProfileSnapShotVC.m */,
+			);
+			path = ProfileSnapShot;
+			sourceTree = "<group>";
+		};
+		27487A5E1D882CD0009B2C92 /* MyProgress */ = {
+			isa = PBXGroup;
+			children = (
+				27487A5F1D882CEC009B2C92 /* MyProgressVC.h */,
+				27487A601D882CEC009B2C92 /* MyProgressVC.m */,
+				27487A621D8837DC009B2C92 /* MyProgressCell.h */,
+				27487A631D8837DC009B2C92 /* MyProgressCell.m */,
+			);
+			path = MyProgress;
+			sourceTree = "<group>";
+		};
 		2759ECEA1D83060E00FB3297 /* JobDetailView */ = {
 			isa = PBXGroup;
 			children = (
@@ -694,12 +725,15 @@
 				27312C8A1D7F128B00E85020 /* LandingTableViewCell.m in Sources */,
 				27312C711D7F033500E85020 /* JobDescriptionVC.m in Sources */,
 				27312C5E1D7EF60900E85020 /* ChangePasswordViewController.m in Sources */,
+				27487A5D1D882C8A009B2C92 /* ProfileSnapShotVC.m in Sources */,
 				27312C651D7EF8C100E85020 /* FTWCache.m in Sources */,
+				27487A641D8837DC009B2C92 /* MyProgressCell.m in Sources */,
 				27312C4C1D7EF0AE00E85020 /* UIImage+WebP.m in Sources */,
 				27312CAF1D7F2A3800E85020 /* ReferralTableViewCell.m in Sources */,
 				27312C8E1D7F219800E85020 /* ForgotPasswordViewController.m in Sources */,
 				27312BF61D7EEED000E85020 /* UIViewController+MJPopupViewController.m in Sources */,
 				27312C471D7EF0AE00E85020 /* SDWebImageManager.m in Sources */,
+				27487A611D882CEC009B2C92 /* MyProgressVC.m in Sources */,
 				27312C1C1D7EEF8300E85020 /* MyAccountTableViewCell.m in Sources */,
 				27312BDF1D7EEB3300E85020 /* SVProgressHUD.m in Sources */,
 				27312C451D7EF0AE00E85020 /* SDWebImageDownloader.m in Sources */,

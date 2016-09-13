@@ -48,11 +48,11 @@
     NSDictionary *textAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIColor colorWithRed:0.992 green:0.855 blue:0.035 alpha:1],NSBackgroundColorAttributeName,nil];
     
     self.navigationController.navigationBar.titleTextAttributes = textAttributes;
+    //Add the one menu (my progress)
+    optionsOne = [NSArray arrayWithObjects:@"Home",@"Profile", @"Registred Job",@"Invite Friends",@"My Progress",@"Settings",@"Logout", nil];
     
-    optionsOne = [NSArray arrayWithObjects:@"Home",@"Profile", @"Registred Job",@"Invite Friends",@"Settings",@"Logout", nil];
     
-    
-    identifireOne=[NSArray arrayWithObjects:@"firstCell",@"secondCell",@"thirdCell",@"fourthCell",@"fifthCell",@"sixthCell",nil];
+    identifireOne=[NSArray arrayWithObjects:@"firstCell",@"secondCell",@"thirdCell",@"fourthCell",@"fifthCell",@"sixthCell",@"seventhCell",nil];
     
     self.menuTable.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     self.automaticallyAdjustsScrollViewInsets = NO;
@@ -128,7 +128,7 @@
 //table Did Select Method
 #pragma didSelectRowAtIndexPath delegate method
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-   if (indexPath.row==5) {
+   if (indexPath.row==6) {
             UIAlertView *alert=[[UIAlertView alloc]initWithTitle:ALERTTITLE message:@"Are you sure you want to Logout ?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
             [alert show];
         }

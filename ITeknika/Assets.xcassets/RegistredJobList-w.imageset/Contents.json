@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "mydeals32-g.png",
+      "filename" : "progress-Pad-w-32.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "mydeals64-g.png",
+      "filename" : "progress-Pad-w-64.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "mydeals96-g.png",
+      "filename" : "progress-Pad-w-96.png",
       "scale" : "3x"
     }
   ],

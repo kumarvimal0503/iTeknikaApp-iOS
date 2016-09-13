@@ -37,6 +37,10 @@
 // View will Appear
 -(void)viewWillAppear:(BOOL)animated{
 
+    
+    // Add the button for profile snapshot.(editable).
+    
+    
     //Background Gradient SettingSetting
     CAGradientLayer *bgLayer = [BackgroundLayer blueOrangeGradient];
     bgLayer.frame = self.view.bounds;
@@ -66,6 +70,14 @@
 {
     [self performSegueWithIdentifier:EDITPROFILESEGUE sender:nil];
 }
+
+- (IBAction)profileSnapShotButtonAction:(id)sender
+{
+     [self performSegueWithIdentifier:PROFILESNAPSHOTSEGUE sender:nil];
+}
+
+
+
 //Code for Menu Slide bar Show on swipe gesture
 -(void)initialize{
     //adding swipe gesture

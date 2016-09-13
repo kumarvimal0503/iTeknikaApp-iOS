@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "mydeals32-w.png",
+      "filename" : "performance-32.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "mydeals64-w.png",
+      "filename" : "performance-64.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "mydeals96-w.png",
+      "filename" : "performance-96.png",
       "scale" : "3x"
     }
   ],
