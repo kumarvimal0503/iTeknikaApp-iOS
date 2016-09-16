@@ -61,7 +61,9 @@
 //Metallic blue Orange gradient background
 + (CAGradientLayer*) blueOrangeGradient {
 //Orange color
-    UIColor *colorOne =[UIColor colorWithRed:0.78 green:0.22 blue:0.06 alpha:1.0];
+   // UIColor *colorThree =[UIColor colorWithRed:0.78 green:0.22 blue:0.06 alpha:1.0];
+    //Dark Blue of team viewer
+    UIColor *colorOne =[UIColor colorWithRed:0.24 green:0.20 blue:0.80 alpha:1.0];
     //Blue color
     UIColor *colorTwo =[UIColor colorWithRed:0.08 green:0.63 blue:0.85 alpha:1.0];
     

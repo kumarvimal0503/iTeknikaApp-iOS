@@ -10,6 +10,8 @@
 #import "global.h"
 #import "SVProgressHUD.h"
 #import "BackgroundLayer.h"
+#import "WebServiceClass.h"
+
 
 #define SIGNUPSEGUE @"SignUpSegue"
 #define FORGOTPASSWORDSEGUE @"forgotSegue"
@@ -108,7 +110,13 @@ CGFloat animatedDistance;
     if([global isConnected]){
         
         if ( [self IsEmailValid:emailTextField.text]){
-            
+
+//            //Web Service Call for Login
+//            [[WebServiceClass webServiceInstance] loginServiceCall:^(NSDictionary *response)
+//            {
+//                //Code for Successs response and failure
+//            }];
+//            
             if ([emailTextField.text isEqualToString:@"diwakar.g88@gmail.com"] && [passWordTextField.text isEqualToString:@"123456"])
             {
                 [SVProgressHUD dismiss];
