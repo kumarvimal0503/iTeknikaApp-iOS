@@ -25,6 +25,7 @@
 @synthesize emailTextfield;
 @synthesize changePasswordButton;
 @synthesize userPlaceholderImage;
+@synthesize profileSnapShotButton;
 // View did load method
 - (void)viewDidLoad {
     
@@ -133,6 +134,9 @@
     //For button border
     changePasswordButton.layer.borderColor=[[UIColor whiteColor]CGColor];
     changePasswordButton.layer.borderWidth= 0.3f;
+    
+    profileSnapShotButton.layer.borderColor=[[UIColor whiteColor]CGColor];
+    profileSnapShotButton.layer.borderWidth= 0.3f;
     
     //UserPlaceholderImage border
     userPlaceholderImage.layer.cornerRadius=userPlaceholderImage.frame.size.height/2;

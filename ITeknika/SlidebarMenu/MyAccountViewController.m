@@ -37,9 +37,9 @@
     
     
     
-    NSURL *imageURL=[[NSURL alloc] initWithString:@"https://www.google.co.in/search?q=diwakar+prasad+garg&client=firefox-b-ab&biw=1373&bih=726&tbm=isch&imgil=hij-AB_pyAyuzM%253A%253BBqaggvdvop7y1M%253Bhttps%25253A%25252F%25252Fin.linkedin.com%25252Fin%25252Fdiwakar-prasad-garg-b8b09056&source=iu&pf=m&fir=hij-AB_pyAyuzM%253A%252CBqaggvdvop7y1M%252C_&usg=__jJiONrJ47xfdAYzesb2VnE8hmGo%3D&ved=0ahUKEwiZrs3Z6frOAhUGM48KHUtNDyAQyjcIMA&ei=tMHOV5mEGobmvATLmr2AAg#imgrc=hij-AB_pyAyuzM%3A"];
+    NSURL *imageURL=[[NSURL alloc] initWithString:@"https://qb-mikemessenger-s3.s3.amazonaws.com/d6134dee8ab54c28a0cd0a2feefba85900"];
     
-    [self.userPlaceholderImage sd_setImageWithURL:imageURL placeholderImage:[UIImage imageNamed:@"name"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+    [self.userPlaceholderImage sd_setImageWithURL:imageURL placeholderImage:[UIImage imageNamed:@"profileplaceholder"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         
         DMLog(@"Image Method Success");
     }];
@@ -49,10 +49,10 @@
     
     self.navigationController.navigationBar.titleTextAttributes = textAttributes;
     //Add the one menu (my progress)
-    optionsOne = [NSArray arrayWithObjects:@"Home",@"Profile", @"Registred Job",@"Invite Friends",@"My Progress",@"Settings",@"Logout", nil];
+    optionsOne = [NSArray arrayWithObjects:@"Home",@"New Feeds",@"Registred Job",@"Invite Friends",@"My Progress",@"Profile", @"Settings",@"Logout", nil];
     
     
-    identifireOne=[NSArray arrayWithObjects:@"firstCell",@"secondCell",@"thirdCell",@"fourthCell",@"fifthCell",@"sixthCell",@"seventhCell",nil];
+    identifireOne=[NSArray arrayWithObjects:@"firstCell",@"seventhCell",@"thirdCell",@"fourthCell",@"fifthCell",@"secondCell",@"sixthCell",@"eightCell",nil];
     
     self.menuTable.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     self.automaticallyAdjustsScrollViewInsets = NO;
@@ -81,7 +81,7 @@
     
     NSURL *imageURL=[[NSURL alloc] initWithString:@"https://qb-mikemessenger-s3.s3.amazonaws.com/d6134dee8ab54c28a0cd0a2feefba85900"];
     
-    [self.userPlaceholderImage sd_setImageWithURL:imageURL placeholderImage:[UIImage imageNamed:@"name"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+    [self.userPlaceholderImage sd_setImageWithURL:imageURL placeholderImage:[UIImage imageNamed:@"profileplaceholder"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         
         DMLog(@"Image Method Success");
     }];
@@ -128,7 +128,7 @@
 //table Did Select Method
 #pragma didSelectRowAtIndexPath delegate method
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-   if (indexPath.row==6) {
+   if (indexPath.row==7) {
             UIAlertView *alert=[[UIAlertView alloc]initWithTitle:ALERTTITLE message:@"Are you sure you want to Logout ?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
             [alert show];
         }
