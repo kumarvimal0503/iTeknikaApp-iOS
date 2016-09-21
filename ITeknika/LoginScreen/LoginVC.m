@@ -104,41 +104,41 @@ CGFloat animatedDistance;
 
 - (IBAction)loginButtonAction:(id)sender
 {
-//    [self performSegueWithIdentifier:LOGINSEGUE sender:nil];
-    [SVProgressHUD showWithStatus:PLEASEWAIT maskType:SVProgressHUDMaskTypeBlack];
-    
-    if([global isConnected]){
-        
-        if ( [self IsEmailValid:emailTextField.text]){
-
-//            //Web Service Call for Login
-//            [[WebServiceClass webServiceInstance] loginServiceCall:^(NSDictionary *response)
+    [self performSegueWithIdentifier:LOGINSEGUE sender:nil];
+//    [SVProgressHUD showWithStatus:PLEASEWAIT maskType:SVProgressHUDMaskTypeBlack];
+//    
+//    if([global isConnected]){
+//        
+//        if ( [self IsEmailValid:emailTextField.text]){
+//
+////            //Web Service Call for Login
+////            [[WebServiceClass webServiceInstance] loginServiceCall:^(NSDictionary *response)
+////            {
+////                //Code for Successs response and failure
+////            }];
+////            
+//            if ([emailTextField.text isEqualToString:@"diwakar.g88@gmail.com"] && [passWordTextField.text isEqualToString:@"123456"])
 //            {
-//                //Code for Successs response and failure
-//            }];
-//            
-            if ([emailTextField.text isEqualToString:@"diwakar.g88@gmail.com"] && [passWordTextField.text isEqualToString:@"123456"])
-            {
-                [SVProgressHUD dismiss];
-                [self performSegueWithIdentifier:LOGINSEGUE sender:nil];
-            }
-            else
-            {
-                [SVProgressHUD dismiss];
-                [global showAllertMsg:ALERTTITLE Message:@"Enter Valid Email Id"];
-            }
-        }
-        else
-        {
-             [SVProgressHUD dismiss];
-            [global showAllertMsg:ALERTTITLE Message:@"Enter Valid Email Id"];
-        }
-    }
-    else
-    {
-        [SVProgressHUD dismiss];
-  
-    }
+//                [SVProgressHUD dismiss];
+//                [self performSegueWithIdentifier:LOGINSEGUE sender:nil];
+//            }
+//            else
+//            {
+//                [SVProgressHUD dismiss];
+//                [global showAllertMsg:ALERTTITLE Message:@"Enter Valid Email Id"];
+//            }
+//        }
+//        else
+//        {
+//             [SVProgressHUD dismiss];
+//            [global showAllertMsg:ALERTTITLE Message:@"Enter Valid Email Id"];
+//        }
+//    }
+//    else
+//    {
+//        [SVProgressHUD dismiss];
+//  
+//    }
 }
 
 - (IBAction)forgotPasswordButtonAction:(id)sender

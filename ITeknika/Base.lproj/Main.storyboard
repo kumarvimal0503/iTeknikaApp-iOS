@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="MyriadPro-Bold_0.otf">
@@ -32,12 +32,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wj3-Ty-mOI" customClass="TextFieldValidator">
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-2" y="295" width="324" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="o6p-nY-EMo"/>
                                 </constraints>
-                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Light" family="Myriad Pro" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
                                 <connections>
@@ -46,12 +47,13 @@
                                 </connections>
                             </textField>
                             <textField clearsContextBeforeDrawing="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oYg-ob-Zap" customClass="TextFieldValidator">
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-2" y="345" width="324" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="aco-Hf-xrr"/>
                                 </constraints>
-                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Light" family="Myriad Pro" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" secureTextEntry="YES"/>
                                 <connections>
@@ -60,54 +62,60 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehR-DH-CQV">
-                                <color key="backgroundColor" red="0.72307610511779785" green="0.14656160771846771" blue="0.057137817144393921" alpha="0.74929956900000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-2" y="539" width="324" height="29"/>
+                                <color key="backgroundColor" red="0.72307610511779785" green="0.14656160771846771" blue="0.057137817144393921" alpha="0.74929956900000005" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ehR-DH-CQV" secondAttribute="height" multiplier="326:29" id="O9J-o0-kgI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="17"/>
                                 <state key="normal" title="Link for Sign Up">
-                                    <color key="titleColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="createNewAccountButtonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lCf-Ih-m6T"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email-w" translatesAutoresizingMaskIntoConstraints="NO" id="1MB-sW-Yf9">
+                                <rect key="frame" x="16" y="304" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1MB-sW-Yf9" secondAttribute="height" multiplier="1:1" id="WKJ-UD-mG9"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="746" image="ic_MakeInIndia.png" translatesAutoresizingMaskIntoConstraints="NO" id="iaL-3v-lsD">
+                                <rect key="frame" x="43" y="70" width="220" height="105"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="iaL-3v-lsD" secondAttribute="height" multiplier="44:21" id="57Z-pC-vrY"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="passwordIcon-w" translatesAutoresizingMaskIntoConstraints="NO" id="V9O-VB-gBB">
+                                <rect key="frame" x="16" y="354" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="V9O-VB-gBB" secondAttribute="height" multiplier="1:1" id="dyL-Rl-UZI"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McX-8N-qnO">
+                                <rect key="frame" x="92" y="487" width="122" height="27"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="15"/>
                                 <state key="normal" title="Forgot Password ?">
-                                    <color key="titleColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="forgotPasswordButtonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pp0-oJ-HC9"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6v7-8i-P1Q">
-                                <color key="backgroundColor" red="0.72307610511779785" green="0.14656160771846771" blue="0.057137817144393921" alpha="0.74929956896551719" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-2" y="421" width="324" height="50"/>
+                                <color key="backgroundColor" red="0.72307610511779785" green="0.14656160771846771" blue="0.057137817144393921" alpha="0.74929956896551719" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2ot-Gp-Kuu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="25"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Login">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="loginButtonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FnI-gj-Je9"/>
@@ -185,7 +193,7 @@
                     <view key="view" contentMode="scaleToFill" id="dyZ-gY-76q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="F3Y-YC-Gwv"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -248,27 +256,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="dwy-83-bBx">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-9" y="64" width="336" height="504"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="landingCell" rowHeight="72" id="LbB-Li-Sf4" customClass="LandingTableViewCell">
                                         <rect key="frame" x="0.0" y="1" width="336" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LbB-Li-Sf4" id="xec-Ou-VZE">
-                                            <frame key="frameInset" width="336" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="71"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nm1-fR-CHa">
-                                                    <frame key="frameInset" minX="17" minY="15" width="303" height="21"/>
+                                                    <rect key="frame" x="17" y="15" width="303" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eam-ae-iUA">
-                                                    <frame key="frameInset" minX="17" minY="44" width="292" height="21"/>
+                                                    <rect key="frame" x="17" y="44" width="292" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -285,7 +294,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="dwy-83-bBx" firstAttribute="top" secondItem="tKp-57-hTu" secondAttribute="bottom" id="EJn-Bl-eiO"/>
                             <constraint firstItem="QKs-Md-dgu" firstAttribute="top" secondItem="dwy-83-bBx" secondAttribute="bottom" id="iSD-4S-HSv"/>
@@ -340,36 +349,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileplaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="7Qi-fj-qlB">
+                                <rect key="frame" x="120" y="86" width="80" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="7Qi-fj-qlB" secondAttribute="height" multiplier="1:1" id="734-bf-yy3"/>
+                                    <constraint firstAttribute="width" constant="80" id="LfS-mm-N7T"/>
+                                    <constraint firstAttribute="height" constant="80" id="gSf-8M-pb9"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bk9-qZ-ZYb">
+                                <rect key="frame" x="16" y="169" width="288" height="0.0"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" allowsSelectionDuringEditing="YES" rowHeight="45" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="4eC-jB-u6c">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="separatorColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-16" y="186" width="338" height="382"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="separatorInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="inviteFriendCell" rowHeight="45" id="5eE-dW-zuI" customClass="ReferralTableViewCell">
                                         <rect key="frame" x="0.0" y="1" width="338" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5eE-dW-zuI" id="Rtd-0a-TNF">
-                                            <frame key="frameInset" width="305" height="44.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="305" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZN5-Hm-TtN">
+                                                    <rect key="frame" x="28" y="9" width="25" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="L7L-M8-uEF"/>
                                                         <constraint firstAttribute="width" constant="25" id="ctl-yB-J7v"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3W-u9-jk1">
+                                                    <rect key="frame" x="72" y="21" width="188" height="0.0"/>
                                                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -381,7 +396,7 @@
                                                 <constraint firstItem="S3W-u9-jk1" firstAttribute="centerY" secondItem="ZN5-Hm-TtN" secondAttribute="centerY" id="zDw-fn-PYa"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="referralIconImage" destination="ZN5-Hm-TtN" id="bK3-Yq-oWv"/>
                                             <outlet property="referralNameLabel" destination="S3W-u9-jk1" id="Nfe-hw-cTb"/>
@@ -395,14 +410,13 @@
                             </tableView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="7Qi-fj-qlB" firstAttribute="leading" secondItem="dI6-mL-HNf" secondAttribute="leadingMargin" constant="104" id="2dt-Zu-yLj"/>
                             <constraint firstItem="Bk9-qZ-ZYb" firstAttribute="leading" secondItem="dI6-mL-HNf" secondAttribute="leadingMargin" id="CPb-0S-tmm"/>
                             <constraint firstItem="Bk9-qZ-ZYb" firstAttribute="top" secondItem="7Qi-fj-qlB" secondAttribute="bottom" constant="3" id="FGe-Ae-ghc"/>
+                            <constraint firstItem="7Qi-fj-qlB" firstAttribute="centerX" secondItem="dI6-mL-HNf" secondAttribute="centerX" id="Ktq-rZ-E9W"/>
                             <constraint firstItem="7Qi-fj-qlB" firstAttribute="top" secondItem="TxU-ND-p0a" secondAttribute="bottom" constant="22" id="Weq-27-RFe"/>
                             <constraint firstItem="4eC-jB-u6c" firstAttribute="top" secondItem="Bk9-qZ-ZYb" secondAttribute="bottom" constant="17" id="bsA-mw-hlD"/>
                             <constraint firstItem="MgH-Ul-9Po" firstAttribute="top" secondItem="4eC-jB-u6c" secondAttribute="bottom" id="c7j-BQ-ILj"/>
                             <constraint firstItem="Bk9-qZ-ZYb" firstAttribute="trailing" secondItem="dI6-mL-HNf" secondAttribute="trailingMargin" id="eCY-Mo-FJ9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7Qi-fj-qlB" secondAttribute="trailing" constant="104" id="edV-L1-Ho9"/>
                             <constraint firstItem="4eC-jB-u6c" firstAttribute="leading" secondItem="dI6-mL-HNf" secondAttribute="leadingMargin" constant="-32" id="jkw-h0-DT0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4eC-jB-u6c" secondAttribute="trailing" constant="-18" id="noi-gT-Zta"/>
                         </constraints>
@@ -473,16 +487,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your registered email id and click Send Email. A new password will be sent to you on your registered email id." lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPZ-Ru-hqW">
+                                <rect key="frame" x="14" y="159" width="290" height="39"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="13"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sQ0-oH-6Ba" customClass="TextFieldValidator">
-                                <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-1" y="208" width="322" height="42"/>
+                                <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="OUe-4N-h1v"/>
                                 </constraints>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
                                 <connections>
@@ -491,20 +507,22 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jp8-WU-hVO">
-                                <color key="backgroundColor" red="0.7803921568627451" green="0.22352941176470587" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="303" width="320" height="45"/>
+                                <color key="backgroundColor" red="0.7803921568627451" green="0.22352941176470587" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Qnj-aV-Bd3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="20"/>
                                 <state key="normal" title="Send Email">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="sendPasswordAction:" destination="Ifn-td-mSr" eventType="touchUpInside" id="DbZ-jQ-2eU"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email-w" translatesAutoresizingMaskIntoConstraints="NO" id="bTN-SL-1S6">
+                                <rect key="frame" x="16" y="216" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="Xsh-jU-9TX"/>
                                     <constraint firstAttribute="height" constant="25" id="yZu-Ms-csJ"/>
@@ -570,36 +588,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" bounces="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" allowsSelectionDuringEditing="YES" rowHeight="50" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="tWf-zg-5En">
-                                <color key="backgroundColor" red="0.28176459670066833" green="0.28487598896026611" blue="0.29984623193740845" alpha="0.19" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.28176459670066833" green="0.28487598896026611" blue="0.29984623193740845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="separatorColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-16" y="169" width="336" height="400"/>
+                                <color key="backgroundColor" red="0.28176459670066833" green="0.28487598896026611" blue="0.29984623193740845" alpha="0.19" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.28176459670066833" green="0.28487598896026611" blue="0.29984623193740845" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <color key="sectionIndexBackgroundColor" red="0.05614558607339859" green="0.44183778762817383" blue="0.48725795745849609" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="sectionIndexTrackingBackgroundColor" red="0.0045698774047195911" green="0.0" blue="0.051271729171276093" alpha="0.81000000000000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.05614558607339859" green="0.44183778762817383" blue="0.48725795745849609" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.0045698774047195911" green="0.0" blue="0.051271729171276093" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="firstCell" rowHeight="40" id="O8M-ow-YMe" customClass="MyAccountTableViewCell">
                                         <rect key="frame" x="0.0" y="1" width="336" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="O8M-ow-YMe" id="aC1-u8-x6I">
-                                            <frame key="frameInset" width="336" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="39"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nextarrow-g" highlightedImage="nextarrow-w" translatesAutoresizingMaskIntoConstraints="NO" id="A3T-kz-2MY">
+                                                    <rect key="frame" x="243" y="12" width="15" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="15" id="7sy-Yd-pi0"/>
                                                         <constraint firstAttribute="height" constant="15" id="ebZ-Vf-Y0L"/>
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home-g" highlightedImage="Home-w" translatesAutoresizingMaskIntoConstraints="NO" id="lfE-BS-mMV">
-                                                    <color key="tintColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <rect key="frame" x="22" y="7" width="25" height="25"/>
+                                                    <color key="tintColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="D09-aM-0Hf"/>
                                                         <constraint firstAttribute="width" constant="25" id="sP4-Gv-jTa"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ila-19-kXE">
+                                                    <rect key="frame" x="72" y="12" width="37" height="16"/>
                                                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -612,7 +634,7 @@
                                                 <constraint firstItem="lfE-BS-mMV" firstAttribute="leading" secondItem="aC1-u8-x6I" secondAttribute="leadingMargin" constant="14" id="x70-3V-i4s"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0045698774047195911" green="0.0" blue="0.051271729171276093" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0045698774047195911" green="0.0" blue="0.051271729171276093" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="optionName" destination="ila-19-kXE" id="7nx-YS-GcD"/>
                                             <segue destination="6c3-7M-rhj" kind="custom" identifier="" customClass="SWRevealViewControllerSeguePushController" id="A0w-6m-9NY"/>
@@ -622,24 +644,27 @@
                                         <rect key="frame" x="0.0" y="41" width="336" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lqy-hc-nhk" id="qdG-Yf-Lub">
-                                            <frame key="frameInset" width="336" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="39"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userIcon-g" highlightedImage="userIcon-w" translatesAutoresizingMaskIntoConstraints="NO" id="D4S-Y6-g7Z">
+                                                    <rect key="frame" x="22" y="7" width="25" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="75V-7E-7Jf"/>
                                                         <constraint firstAttribute="width" constant="25" id="Sq9-5Z-VLU"/>
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nextarrow-g" highlightedImage="nextarrow-w" translatesAutoresizingMaskIntoConstraints="NO" id="YaO-pP-eb2">
+                                                    <rect key="frame" x="243" y="12" width="15" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="15" id="Tj4-Er-QKb"/>
                                                         <constraint firstAttribute="height" constant="15" id="ZKX-9h-xvp"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nic-Yk-hVH">
+                                                    <rect key="frame" x="72" y="12" width="37" height="16"/>
                                                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -652,7 +677,7 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="YaO-pP-eb2" secondAttribute="trailing" constant="70" id="y3p-HS-b2Q"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0045698774047195911" green="0.0" blue="0.051271729171276093" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0045698774047195911" green="0.0" blue="0.051271729171276093" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="optionIcon" destination="D4S-Y6-g7Z" id="EZz-ah-3Bs"/>
                                             <outlet property="optionName" destination="Nic-Yk-hVH" id="h2Y-K7-MBa"/>
@@ -663,22 +688,25 @@
                                         <rect key="frame" x="0.0" y="81" width="336" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A5X-ZU-qL4" id="6P1-29-Q26">
-                                            <frame key="frameInset" width="336" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="39"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jkf-Oi-f7v">
+                                                    <rect key="frame" x="72" y="12" width="37" height="16"/>
                                                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RegistredJobList-g" highlightedImage="RegistredJobList-w" translatesAutoresizingMaskIntoConstraints="NO" id="KRh-Ny-esZ">
-                                                    <color key="tintColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <rect key="frame" x="22" y="7" width="25" height="25"/>
+                                                    <color key="tintColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="5x4-zJ-0p9"/>
                                                         <constraint firstAttribute="width" constant="25" id="VbO-Aj-1lw"/>
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nextarrow-g" highlightedImage="nextarrow-w" translatesAutoresizingMaskIntoConstraints="NO" id="xoz-ZR-93H">
+                                                    <rect key="frame" x="243" y="12" width="15" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="15" id="8Wp-u4-bG8"/>
                                                         <constraint firstAttribute="height" constant="15" id="AhH-Kx-fhV"/>
@@ -694,7 +722,7 @@
                                                 <constraint firstItem="KRh-Ny-esZ" firstAttribute="leading" secondItem="6P1-29-Q26" secondAttribute="leadingMargin" constant="14" id="j8o-oR-1o7"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0045698774047195911" green="0.0" blue="0.051271729171276093" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0045698774047195911" green="0.0" blue="0.051271729171276093" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="optionIcon" destination="KRh-Ny-esZ" id="4Nd-Km-L0U"/>
                                             <outlet property="optionName" destination="Jkf-Oi-f7v" id="LO3-4H-M4v"/>
@@ -705,21 +733,24 @@
                                         <rect key="frame" x="0.0" y="121" width="336" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XAj-CW-UJh" id="D4x-QL-1Rp">
-                                            <frame key="frameInset" width="336" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="39"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knc-Sl-lRg">
+                                                    <rect key="frame" x="72" y="12" width="37" height="16"/>
                                                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nextarrow-g" highlightedImage="nextarrow-w" translatesAutoresizingMaskIntoConstraints="NO" id="RRU-YZ-EAs">
+                                                    <rect key="frame" x="243" y="12" width="15" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="UJM-hq-5bc"/>
                                                         <constraint firstAttribute="width" constant="15" id="wt5-XE-tQL"/>
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="referral-g" highlightedImage="referral-w" translatesAutoresizingMaskIntoConstraints="NO" id="Ne5-bN-ySQ">
+                                                    <rect key="frame" x="22" y="7" width="25" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="25" id="hs4-6Q-nIL"/>
                                                         <constraint firstAttribute="height" constant="25" id="ztp-Vb-U6A"/>
@@ -735,7 +766,7 @@
                                                 <constraint firstItem="Ne5-bN-ySQ" firstAttribute="leading" secondItem="D4x-QL-1Rp" secondAttribute="leadingMargin" constant="14" id="ydy-hn-aGT"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0045698774047195911" green="0.0" blue="0.051271729171276093" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0045698774047195911" green="0.0" blue="0.051271729171276093" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="optionIcon" destination="Ne5-bN-ySQ" id="h3r-aN-KsB"/>
                                             <outlet property="optionName" destination="knc-Sl-lRg" id="vJG-mJ-ndA"/>
@@ -746,21 +777,24 @@
                                         <rect key="frame" x="0.0" y="161" width="336" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z6R-qM-LDn" id="EhD-t2-BBM">
-                                            <frame key="frameInset" width="336" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="39"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9x2-iA-hYl">
+                                                    <rect key="frame" x="72" y="12" width="37" height="16"/>
                                                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nextarrow-g" highlightedImage="nextarrow-w" translatesAutoresizingMaskIntoConstraints="NO" id="paI-mI-kvZ">
+                                                    <rect key="frame" x="243" y="12" width="15" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="15" id="IcD-AH-yls"/>
                                                         <constraint firstAttribute="height" constant="15" id="yIU-Kw-3WY"/>
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Progress-g" highlightedImage="Progress-w" translatesAutoresizingMaskIntoConstraints="NO" id="211-wR-YN6">
+                                                    <rect key="frame" x="22" y="7" width="25" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="PUU-t2-pR5"/>
                                                         <constraint firstAttribute="width" constant="25" id="dcr-jP-IjG"/>
@@ -776,7 +810,7 @@
                                                 <constraint firstItem="9x2-iA-hYl" firstAttribute="leading" secondItem="211-wR-YN6" secondAttribute="trailing" constant="25" id="yiv-Ce-ipI"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0045698774047195911" green="0.0" blue="0.051271729171276093" alpha="0.02" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0045698774047195911" green="0.0" blue="0.051271729171276093" alpha="0.02" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="optionIcon" destination="211-wR-YN6" id="YjP-5n-6VG"/>
                                             <outlet property="optionName" destination="9x2-iA-hYl" id="654-sb-f8S"/>
@@ -787,21 +821,24 @@
                                         <rect key="frame" x="0.0" y="201" width="336" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PH5-bZ-Vo6" id="ocN-sB-A8g">
-                                            <frame key="frameInset" width="336" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="39"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlG-Q5-7Za">
+                                                    <rect key="frame" x="72" y="12" width="37" height="16"/>
                                                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nextarrow-g" highlightedImage="nextarrow-w" translatesAutoresizingMaskIntoConstraints="NO" id="s3t-fC-mMu">
+                                                    <rect key="frame" x="243" y="12" width="15" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="15" id="KdX-Pr-E2S"/>
                                                         <constraint firstAttribute="height" constant="15" id="enJ-fI-9TK"/>
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings-g" highlightedImage="settings-w" translatesAutoresizingMaskIntoConstraints="NO" id="BlV-z7-OnP">
+                                                    <rect key="frame" x="22" y="7" width="25" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="25" id="9Mi-9R-TEU"/>
                                                         <constraint firstAttribute="height" constant="25" id="cZg-K9-qsB"/>
@@ -817,7 +854,7 @@
                                                 <constraint firstItem="GlG-Q5-7Za" firstAttribute="leading" secondItem="BlV-z7-OnP" secondAttribute="trailing" constant="25" id="smW-6B-tLk"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0045698774047195911" green="0.0" blue="0.051271729171276093" alpha="0.02" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0045698774047195911" green="0.0" blue="0.051271729171276093" alpha="0.02" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="optionIcon" destination="BlV-z7-OnP" id="Vgv-dq-b6U"/>
                                             <outlet property="optionName" destination="GlG-Q5-7Za" id="ePH-D9-bfk"/>
@@ -828,21 +865,24 @@
                                         <rect key="frame" x="0.0" y="241" width="336" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tkk-4a-RjS" id="JUD-9G-d6I">
-                                            <frame key="frameInset" width="336" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="39"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zZ-6m-uW5">
+                                                    <rect key="frame" x="72" y="12" width="37" height="16"/>
                                                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nextarrow-g" highlightedImage="nextarrow-w" translatesAutoresizingMaskIntoConstraints="NO" id="bgE-lv-OL0">
+                                                    <rect key="frame" x="243" y="12" width="15" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="ZNE-sJ-8yh"/>
                                                         <constraint firstAttribute="width" constant="15" id="lmd-5d-N4g"/>
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewFeeds-g" highlightedImage="NewFeeds-w" translatesAutoresizingMaskIntoConstraints="NO" id="1Z7-TL-03e">
+                                                    <rect key="frame" x="22" y="7" width="25" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="gN7-Fc-40N"/>
                                                         <constraint firstAttribute="width" constant="25" id="lZz-bc-ZJo"/>
@@ -858,7 +898,7 @@
                                                 <constraint firstAttribute="centerY" secondItem="1Z7-TL-03e" secondAttribute="centerY" id="rYZ-Se-jYu"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0045698774047195911" green="0.0" blue="0.051271729171276093" alpha="0.02" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0045698774047195911" green="0.0" blue="0.051271729171276093" alpha="0.02" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="optionIcon" destination="1Z7-TL-03e" id="Xrb-Et-AKp"/>
                                             <outlet property="optionName" destination="7zZ-6m-uW5" id="kzU-bl-UCc"/>
@@ -869,21 +909,24 @@
                                         <rect key="frame" x="0.0" y="281" width="336" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e1E-K1-0hJ" id="uz3-0l-1bM">
-                                            <frame key="frameInset" width="336" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="39"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfb-bt-OQt">
+                                                    <rect key="frame" x="72" y="12" width="37" height="16"/>
                                                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nextarrow-g" highlightedImage="nextarrow-w" translatesAutoresizingMaskIntoConstraints="NO" id="D0U-7d-SDo">
+                                                    <rect key="frame" x="243" y="12" width="15" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="15" id="kKU-Cm-SGj"/>
                                                         <constraint firstAttribute="height" constant="15" id="zr9-nE-4PH"/>
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logout-g" highlightedImage="logout-w" translatesAutoresizingMaskIntoConstraints="NO" id="JHC-eL-Zk5">
+                                                    <rect key="frame" x="22" y="7" width="25" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="25" id="QKk-5w-mNB"/>
                                                         <constraint firstAttribute="height" constant="25" id="mXq-h5-v7d"/>
@@ -899,7 +942,7 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="D0U-7d-SDo" secondAttribute="trailing" constant="70" id="wHQ-ul-4GD"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0045698774049999996" green="0.0" blue="0.051271729170000002" alpha="0.02" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0045698774049999996" green="0.0" blue="0.051271729170000002" alpha="0.02" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="optionIcon" destination="JHC-eL-Zk5" id="8fF-Ij-qMO"/>
                                             <outlet property="optionName" destination="Vfb-bt-OQt" id="Ick-so-76R"/>
@@ -913,6 +956,7 @@
                                 </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileplaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="dw8-2W-fpz">
+                                <rect key="frame" x="65" y="20" width="128" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="7PC-g2-htP"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="50" id="bWs-6E-hHK"/>
@@ -920,17 +964,19 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="jpe-eG-wkC">
+                                <rect key="frame" x="129" y="156" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
-                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="78d-ea-ZmQ">
+                                <rect key="frame" x="129" y="158" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
-                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="tintColor" red="0.0045698774047195911" green="0.0" blue="0.051271729171276093" alpha="0.89997844827586204" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0045698774047195911" green="0.0" blue="0.051271729171276093" alpha="0.89997844827586204" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="tWf-zg-5En" secondAttribute="trailing" constant="-16" id="4mp-7l-6Up"/>
                             <constraint firstItem="tWf-zg-5En" firstAttribute="leading" secondItem="MzA-Hh-x5D" secondAttribute="leadingMargin" constant="-32" id="AOc-nS-B6A"/>
@@ -972,33 +1018,37 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileplaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="pul-eQ-tPC">
+                                <rect key="frame" x="128" y="96" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="5cI-PX-iiM"/>
                                     <constraint firstAttribute="height" constant="80" id="rEe-RT-4U7"/>
                                 </constraints>
                             </imageView>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ta-OT-lmD">
-                                <color key="backgroundColor" red="0.81625092029571533" green="0.81622648239135742" blue="0.81624031066894531" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-2" y="413" width="324" height="46"/>
+                                <color key="backgroundColor" red="0.81625092029571533" green="0.81622648239135742" blue="0.81624031066894531" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Change Password">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="changePasswordAction:" destination="kkS-Fm-cKI" eventType="touchUpInside" id="hlQ-Zc-MlL"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="passwordIcon-w" translatesAutoresizingMaskIntoConstraints="NO" id="Xo8-fx-NuX">
+                                <rect key="frame" x="13" y="423" width="26" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="0OQ-Jc-uH7"/>
                                     <constraint firstAttribute="width" constant="26" id="t8s-1p-1q5"/>
                                 </constraints>
                             </imageView>
                             <textField clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t3I-5A-7kj" customClass="TextFieldValidator">
-                                <color key="backgroundColor" red="0.81625092029571533" green="0.81622648239135742" blue="0.81624031066894531" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-2" y="298" width="162" height="46"/>
+                                <color key="backgroundColor" red="0.81625092029571533" green="0.81622648239135742" blue="0.81624031066894531" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
@@ -1007,18 +1057,20 @@
                                 </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userIcon-w" translatesAutoresizingMaskIntoConstraints="NO" id="i6C-i4-GxS">
+                                <rect key="frame" x="13" y="308" width="26" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="26" id="WNb-hm-q8A"/>
                                     <constraint firstAttribute="height" constant="26" id="odg-oR-3O8"/>
                                 </constraints>
                             </imageView>
                             <textField clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfm-OE-a1D" customClass="TextFieldValidator">
-                                <color key="backgroundColor" red="0.81625092029571533" green="0.81622648239135742" blue="0.81624031066894531" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-2" y="252" width="324" height="46"/>
+                                <color key="backgroundColor" red="0.81625092029571533" green="0.81622648239135742" blue="0.81624031066894531" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="CDY-zz-9eO"/>
                                 </constraints>
-                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
@@ -1027,9 +1079,10 @@
                                 </connections>
                             </textField>
                             <textField clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qtP-jJ-wYa" customClass="TextFieldValidator">
-                                <color key="backgroundColor" red="0.81625092029571533" green="0.81622648239135742" blue="0.81624031066894531" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-2" y="344" width="324" height="46"/>
+                                <color key="backgroundColor" red="0.81625092029571533" green="0.81622648239135742" blue="0.81624031066894531" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
@@ -1038,45 +1091,51 @@
                                 </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email-w" translatesAutoresizingMaskIntoConstraints="NO" id="caD-hp-dGC">
+                                <rect key="frame" x="13" y="262" width="26" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="26" id="EN0-1j-aKA"/>
                                     <constraint firstAttribute="height" constant="26" id="QTt-Se-mvI"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nextarrow-w" highlightedImage="nextarrow-w" translatesAutoresizingMaskIntoConstraints="NO" id="TSc-Cq-C6j">
+                                <rect key="frame" x="289" y="429" width="15" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="NDK-PD-rhd"/>
                                     <constraint firstAttribute="width" constant="15" id="dno-ed-X7C"/>
                                 </constraints>
                             </imageView>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y93-Vq-kZh">
-                                <color key="backgroundColor" red="0.81625092029571533" green="0.81622648239135742" blue="0.81624031066894531" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-2" y="478" width="324" height="46"/>
+                                <color key="backgroundColor" red="0.81625092029571533" green="0.81622648239135742" blue="0.81624031066894531" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Profile Snapshot">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="profileSnapShotButtonAction:" destination="kkS-Fm-cKI" eventType="touchUpInside" id="LX0-Zz-MOo"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nextarrow-w" highlightedImage="nextarrow-w" translatesAutoresizingMaskIntoConstraints="NO" id="2Kt-fb-AeE">
+                                <rect key="frame" x="289" y="494" width="15" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="15" id="kNr-uM-I7x"/>
                                     <constraint firstAttribute="height" constant="15" id="vmT-Bz-Kzj"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact-w" translatesAutoresizingMaskIntoConstraints="NO" id="d4r-s7-vp9">
+                                <rect key="frame" x="13" y="354" width="26" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="6Ah-Ts-sLF"/>
                                     <constraint firstAttribute="width" constant="26" id="iYK-wd-PE1"/>
                                 </constraints>
                             </imageView>
                             <textField clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5em-R8-Hfn" customClass="TextFieldValidator">
-                                <color key="backgroundColor" red="0.81625092029571533" green="0.81622648239135742" blue="0.81624031066894531" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="160" y="298" width="162" height="46"/>
+                                <color key="backgroundColor" red="0.81625092029571533" green="0.81622648239135742" blue="0.81624031066894531" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
@@ -1085,6 +1144,7 @@
                                 </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileplaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="LpY-4b-U3k">
+                                <rect key="frame" x="13" y="488" width="26" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="RYc-Dc-QEg"/>
                                     <constraint firstAttribute="width" constant="26" id="iSp-Ts-d2P"/>
@@ -1171,31 +1231,34 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileplaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="lUR-PW-OmM">
+                                <rect key="frame" x="120" y="96" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="IJa-RJ-Wtf"/>
                                     <constraint firstAttribute="width" constant="80" id="Xx4-k4-J8H"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBs-jc-lj8">
-                                <color key="backgroundColor" red="0.097203269600868225" green="0.55970728397369385" blue="0.81514006853103638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="174" y="155" width="20" height="20"/>
+                                <color key="backgroundColor" red="0.097203269600868225" green="0.55970728397369385" blue="0.81514006853103638" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="60G-nD-CFU"/>
                                     <constraint firstAttribute="width" constant="20" id="eAh-4I-jSN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
-                                <color key="tintColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
                                 <state key="normal" image="upload">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="changePictureAction:" destination="ZKX-Gq-fpY" eventType="touchUpInside" id="OFc-1g-dsM"/>
                                 </connections>
                             </button>
                             <textField clearsContextBeforeDrawing="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="76Q-SR-xND" customClass="TextFieldValidator">
-                                <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="165" y="298" width="155" height="46"/>
+                                <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
@@ -1204,9 +1267,10 @@
                                 </connections>
                             </textField>
                             <textField clearsContextBeforeDrawing="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="egn-V4-tWb" customClass="TextFieldValidator">
-                                <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-6" y="344" width="326" height="46"/>
+                                <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
@@ -1215,18 +1279,20 @@
                                 </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact-w" translatesAutoresizingMaskIntoConstraints="NO" id="OIB-4P-dbW">
+                                <rect key="frame" x="6" y="354" width="26" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="26" id="7wC-DF-kh0"/>
                                     <constraint firstAttribute="height" constant="26" id="zVH-3a-k9Z"/>
                                 </constraints>
                             </imageView>
                             <textField clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cCG-Im-4Yh" customClass="TextFieldValidator">
-                                <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-6" y="252" width="326" height="46"/>
+                                <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="Xvu-JG-gS2"/>
                                 </constraints>
-                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
@@ -1235,21 +1301,24 @@
                                 </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email-w" translatesAutoresizingMaskIntoConstraints="NO" id="Lql-pm-33N">
+                                <rect key="frame" x="6" y="263" width="26" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="Rtt-Mt-8ny"/>
                                     <constraint firstAttribute="width" constant="26" id="hJn-86-ayf"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userIcon-w" translatesAutoresizingMaskIntoConstraints="NO" id="wMK-sy-8Ou">
+                                <rect key="frame" x="6" y="308" width="26" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="26" id="RaF-jd-Mbw"/>
                                     <constraint firstAttribute="height" constant="26" id="zKQ-GH-W0X"/>
                                 </constraints>
                             </imageView>
                             <textField clearsContextBeforeDrawing="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M3S-Ky-C7u" customClass="TextFieldValidator">
-                                <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-6" y="298" width="171" height="46"/>
+                                <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
@@ -1316,12 +1385,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2uo-Ak-PUd" customClass="TextFieldValidator">
-                                <color key="backgroundColor" red="0.81625092029571533" green="0.81622648239135742" blue="0.81624031066894531" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-3" y="76" width="326" height="46"/>
+                                <color key="backgroundColor" red="0.81625092029571533" green="0.81622648239135742" blue="0.81624031066894531" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="Gn3-gp-OOZ"/>
                                 </constraints>
-                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                 <connections>
@@ -1330,9 +1400,10 @@
                                 </connections>
                             </textField>
                             <textField clearsContextBeforeDrawing="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JdW-xD-s3g" customClass="TextFieldValidator">
-                                <color key="backgroundColor" red="0.81625092029571533" green="0.81622648239135742" blue="0.81624031066894531" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-3" y="122" width="326" height="46"/>
+                                <color key="backgroundColor" red="0.81625092029571533" green="0.81622648239135742" blue="0.81624031066894531" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                 <connections>
@@ -1341,9 +1412,10 @@
                                 </connections>
                             </textField>
                             <textField clearsContextBeforeDrawing="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Ey-hw-DYD" customClass="TextFieldValidator">
-                                <color key="backgroundColor" red="0.81625092029571533" green="0.81622648239135742" blue="0.81624031066894531" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-3" y="168" width="326" height="46"/>
+                                <color key="backgroundColor" red="0.81625092029571533" green="0.81622648239135742" blue="0.81624031066894531" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                 <connections>
@@ -1391,7 +1463,7 @@
                     <view key="view" contentMode="scaleToFill" id="1Bh-yW-OiH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
@@ -1413,101 +1485,115 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email-g" translatesAutoresizingMaskIntoConstraints="NO" id="eKn-qo-fi7">
+                                <rect key="frame" x="9" y="119" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="F5t-qU-n7b"/>
                                     <constraint firstAttribute="height" constant="25" id="e8d-xY-Ytb"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS Alerts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyG-ol-vg7">
+                                <rect key="frame" x="64" y="75" width="116" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="116" id="pha-dA-71F"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smsalert-g" translatesAutoresizingMaskIntoConstraints="NO" id="QB4-O4-9tR">
+                                <rect key="frame" x="9" y="73" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="UfO-oI-QrJ"/>
                                     <constraint firstAttribute="width" constant="25" id="ZdD-nS-xAx"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Alerts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0F-lt-D7r">
+                                <rect key="frame" x="64" y="121" width="116" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="116" id="W0O-mC-xba"/>
                                     <constraint firstAttribute="height" constant="21" id="scC-U3-CdQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xRX-Wt-YXQ">
-                                <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="110" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="ezF-KS-OPe"/>
                                 </constraints>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BG7-Pg-RTO">
-                                <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="155" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="eXo-B3-q2D"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NsB-U4-mYc">
+                                <rect key="frame" x="64" y="202" width="233" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="233" id="3d6-uQ-hoa"/>
                                     <constraint firstAttribute="height" constant="45" id="hup-Ry-swR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
                                 <state key="normal" title="About Us">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="aboutUsButton:" destination="1i6-Pz-A9p" eventType="touchUpInside" id="riV-QM-Zop"/>
                                 </connections>
                             </button>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9S-wN-gH7">
-                                <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="201" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="zxx-vA-BQT"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sharefeedback-g" translatesAutoresizingMaskIntoConstraints="NO" id="uma-tM-kqu">
+                                <rect key="frame" x="9" y="165" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="915-w6-PLj"/>
                                     <constraint firstAttribute="height" constant="25" id="SV0-VL-0Bj"/>
                                 </constraints>
                             </imageView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dJX-Lc-ymG">
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="255" y="116" width="51" height="31"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="emailAlertAction:" destination="1i6-Pz-A9p" eventType="valueChanged" id="les-KL-F9Z"/>
                                 </connections>
                             </switch>
                             <switch contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="12P-Wn-kp6">
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="255" y="70" width="51" height="31"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="smsAlertAction:" destination="1i6-Pz-A9p" eventType="valueChanged" id="3Q1-tF-es0"/>
                                 </connections>
                             </switch>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tdn-7M-BWd">
-                                <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="247" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="1nF-V1-a02"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutus-g" translatesAutoresizingMaskIntoConstraints="NO" id="xM8-MB-8kb">
+                                <rect key="frame" x="9" y="212" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="MWF-6l-af2"/>
                                     <constraint firstAttribute="height" constant="25" id="bOq-na-51p"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqR-RK-iXJ">
+                                <rect key="frame" x="64" y="155" width="233" height="45"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
                                 <state key="normal" title="Share Feedback">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="shareFeedbackAction:" destination="1i6-Pz-A9p" eventType="touchUpInside" id="QmE-3f-OaU"/>
@@ -1585,7 +1671,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="st4-Nh-JVy">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="5" y="69" width="310" height="180"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="st4-Nh-JVy" secondAttribute="height" multiplier="8:5" constant="22" id="Nbx-wn-IDC"/>
                                 </constraints>
@@ -1624,46 +1711,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_MakeInIndia.png" translatesAutoresizingMaskIntoConstraints="NO" id="yVN-aQ-lco">
+                                <rect key="frame" x="0.0" y="79" width="218" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="yVN-aQ-lco" secondAttribute="height" multiplier="109:55" id="TMN-9I-g6Y"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover new job detail Now......................................" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTi-8d-8gb">
+                                <rect key="frame" x="16" y="173" width="288" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZTi-8d-8gb" secondAttribute="height" multiplier="96:17" id="Y2l-eO-niO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9T-jw-dun">
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-2" y="523" width="324" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="nbb-he-5Ea"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fod-qs-eCu">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-2" y="478" width="324" height="45"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="15"/>
-                                <color key="tintColor" red="0.082352941176470587" green="0.63137254901960782" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.082352941176470587" green="0.63137254901960782" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="contentEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Terms of Service">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="termsOfServiceAction:" destination="MO6-Mh-ScQ" eventType="touchUpInside" id="WMx-Oq-z28"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yr0-zB-CD6">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-2" y="524" width="324" height="45"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="yr0-zB-CD6" secondAttribute="height" multiplier="36:5" id="xsp-9V-VMt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="15"/>
-                                <color key="tintColor" red="0.08235294118" green="0.63137254899999995" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.08235294118" green="0.63137254899999995" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="contentEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Privacy Policy">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="privacyPolicyAction:" destination="MO6-Mh-ScQ" eventType="touchUpInside" id="eCi-yC-2kF"/>
@@ -1716,11 +1808,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qcU-Rw-4Rr">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Demo Text Here">
                                         <attributes>
-                                            <color key="NSColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="12" name="TimesNewRomanPSMT"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
                                                 <tabStops/>
@@ -1732,7 +1825,7 @@
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottomMargin" secondItem="qcU-Rw-4Rr" secondAttribute="bottom" id="JL2-YK-v75"/>
                             <constraint firstItem="qcU-Rw-4Rr" firstAttribute="leading" secondItem="zeR-Xb-vEq" secondAttribute="leadingMargin" constant="-16" id="TgW-iS-Llo"/>
@@ -1760,11 +1853,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0S-g4-xXN">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="demo text here">
                                         <attributes>
-                                            <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="14" name="TimesNewRomanPS-BoldMT"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="15.25" defaultTabInterval="36">
                                                 <tabStops/>
@@ -1776,7 +1870,7 @@
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottomMargin" secondItem="t0S-g4-xXN" secondAttribute="bottom" id="4ub-K0-9xX"/>
                             <constraint firstItem="t0S-g4-xXN" firstAttribute="top" secondItem="6kI-aU-Cxp" secondAttribute="bottom" id="KP9-Jx-lod"/>
@@ -1804,27 +1898,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="GP3-ND-cEI">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-4" y="64" width="328" height="504"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="landingCell" rowHeight="72" id="6aY-T7-Qad" customClass="LandingTableViewCell">
                                         <rect key="frame" x="0.0" y="1" width="328" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6aY-T7-Qad" id="1Gh-mA-BNO">
-                                            <frame key="frameInset" width="328" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="328" height="71"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AI-1B-FL9">
-                                                    <frame key="frameInset" minX="17" minY="15" width="303" height="21"/>
+                                                    <rect key="frame" x="17" y="15" width="303" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YZ-gY-jWi">
-                                                    <frame key="frameInset" minX="17" minY="44" width="292" height="21"/>
+                                                    <rect key="frame" x="17" y="44" width="292" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1841,7 +1936,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="GP3-ND-cEI" firstAttribute="top" secondItem="kW9-Mx-RKE" secondAttribute="bottom" id="2cm-0X-1sh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GP3-ND-cEI" secondAttribute="trailing" constant="-20" id="Njj-Nw-gBd"/>
@@ -1878,21 +1973,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gma-iH-9V2">
-                                <color key="backgroundColor" red="0.78039215689999997" green="0.22352941179999999" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-4" y="522" width="328" height="46"/>
+                                <color key="backgroundColor" red="0.78039215689999997" green="0.22352941179999999" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gma-iH-9V2" secondAttribute="height" multiplier="64:9" id="doC-sC-xLb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="20"/>
                                 <state key="normal" title="Register">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="registerationButtonAction:" destination="RIg-uy-yDY" eventType="touchUpInside" id="p9J-MK-nqv"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="gma-iH-9V2" secondAttribute="trailing" constant="-20" id="6bt-0Y-tNC"/>
                             <constraint firstItem="1mA-ma-OrD" firstAttribute="top" secondItem="gma-iH-9V2" secondAttribute="bottom" id="fLl-c7-Vl3"/>
@@ -1919,13 +2015,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="top" translatesAutoresizingMaskIntoConstraints="NO" id="qo6-2H-sp9">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-4" y="64" width="328" height="504"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="uRZ-zc-hH2" id="oZ7-zQ-7gp"/>
                                 </connections>
                             </webView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="qo6-2H-sp9" firstAttribute="leading" secondItem="Ws0-dr-7f9" secondAttribute="leadingMargin" constant="-20" id="HIW-eJ-OsT"/>
                             <constraint firstItem="e5x-CK-KHd" firstAttribute="top" secondItem="qo6-2H-sp9" secondAttribute="bottom" id="ed3-PR-tVD"/>
@@ -1973,17 +2070,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="XTi-Xb-Pwf">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-9" y="64" width="336" height="504"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="landingCell" rowHeight="72" id="kmZ-bN-Dhc" customClass="MyProgressCell">
                                         <rect key="frame" x="0.0" y="1" width="336" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kmZ-bN-Dhc" id="NoW-Yg-GyU">
-                                            <frame key="frameInset" width="336" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="71"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YC-hP-VfQ">
-                                                    <frame key="frameInset" minX="19" minY="33" width="300" height="21"/>
+                                                    <rect key="frame" x="19" y="33" width="300" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -2002,7 +2100,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="VAD-3e-AD3" firstAttribute="top" secondItem="XTi-Xb-Pwf" secondAttribute="bottom" id="0oZ-81-Jzf"/>
                             <constraint firstItem="XTi-Xb-Pwf" firstAttribute="leading" secondItem="RLK-eL-0PW" secondAttribute="leadingMargin" constant="-25" id="S6t-cZ-ScV"/>
@@ -2056,20 +2154,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="S5w-bP-Akn">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="-9" y="64" width="336" height="504"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="landingCell" rowHeight="72" id="P7d-VY-Nxf" customClass="NewMessageTableViewCell">
                                         <rect key="frame" x="0.0" y="1" width="336" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P7d-VY-Nxf" id="JJG-qJ-cUW">
-                                            <frame key="frameInset" width="336" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="71"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awN-nc-3Xr">
-                                                    <frame key="frameInset" minX="17" minY="25" width="303" height="21"/>
+                                                    <rect key="frame" x="17" y="25" width="303" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -2085,7 +2184,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="S5w-bP-Akn" firstAttribute="leading" secondItem="nSX-Q5-AIV" secondAttribute="leadingMargin" constant="-25" id="80w-mN-KyW"/>
                             <constraint firstItem="fut-jP-J91" firstAttribute="top" secondItem="S5w-bP-Akn" secondAttribute="bottom" id="QGh-iu-bGn"/>

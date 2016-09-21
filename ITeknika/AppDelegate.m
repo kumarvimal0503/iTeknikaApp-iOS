@@ -29,8 +29,8 @@
     
     [[UINavigationBar appearance] setTitleTextAttributes:attributes];
     
-    NSString *colorHexCode=[self hexStringFromColor:[UIColor colorWithRed:0.08 green:0.63 blue:0.85 alpha:1.0]];
-    DMLog(@"Print color %@",colorHexCode);
+//    NSString *colorHexCode=[self hexStringFromColor:[UIColor colorWithRed:0.08 green:0.63 blue:0.85 alpha:1.0]];
+//    DMLog(@"Print color %@",colorHexCode);
      //[self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
